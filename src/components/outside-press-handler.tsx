@@ -25,9 +25,7 @@ export default function OutsidePressHandler(props: IOutsidePressHandlerProps) {
     web: (
       <View
         {...props}
-        /*
-        // @ts-ignore */
-        onClick={setSkippedEventIdFunc}
+        onPointerDown={setSkippedEventIdFunc}
       >
         {deepClone(children, setSkippedEventIdFunc)}
       </View>

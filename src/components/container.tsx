@@ -26,9 +26,7 @@ export default function Container(props: ViewProps) {
     web: (
       <View
         {...props}
-        /*
-        // @ts-ignore */
-        onClick={runEvents}
+        onPointerDown={runEvents}
       >
         {deepClone(props.children, runEvents)}
       </View>
